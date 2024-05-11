@@ -20,7 +20,7 @@ const Posts = () => {
             <Row gutter={16}>
 
                 {
-                    posts.map(post => (<Col key={post.idPost} span={6}><img style={{ width: '100%' }} src={post.imagenUrl} /></Col>))
+                    posts.map(post => (<Col key={post.idPost} span={6}><img alt={`alt-imagen-${post.idPost}`} style={{ width: '100%' }} src={post.imagenUrl} /></Col>))
                 }
             </Row>
         </>
