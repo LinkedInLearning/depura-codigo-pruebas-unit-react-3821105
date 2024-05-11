@@ -1,27 +1,11 @@
 import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import Perfil from './Perfil';
-import configureMockStore from 'redux-mock-store';
-import { POSTS } from '../../datos/posts';
-import PERFILES from '../../datos/perfiles';
+import store from '../../store'
 
 describe('Perfil', () => {
 
-    const mockStore = configureMockStore([]);
-
-    let state = {
-        perfiles: {
-            perfilActual: 'natyc',
-            perfiles: PERFILES
-        },
-        posts: {
-            posts: POSTS
-        }
-    };
-
     test('mostrar la información del usuario en sesión', async () => {
-
-        const store = mockStore(() => state);
 
         render(
             <Provider store={store}>

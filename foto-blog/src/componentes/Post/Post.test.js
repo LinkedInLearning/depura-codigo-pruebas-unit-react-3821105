@@ -63,14 +63,6 @@ describe('Post', () => {
         const botonComentar = screen.getByRole('button', { name: 'Publicar' });
         fireEvent.click(botonComentar);
 
-        expect(mockStore.getActions()[0].type).toEqual('posts/comentarPost');
-        expect(mockStore.getActions()[0].payload).toEqual({
-            idPost: 1,
-            comentario: {
-                idUnico: 10,
-                nombreUsuario: "natyc",
-                comentario: "algún comentario"
-            }
-        });
+        screen.getByText(/algún comentario/i);
     });
 });

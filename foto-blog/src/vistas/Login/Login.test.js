@@ -1,4 +1,4 @@
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import { MemoryRouter as Router } from "react-router-dom";
 import { Provider } from 'react-redux';
 import Login from './Login';
@@ -23,9 +23,7 @@ describe('Login', () => {
         const boton = screen.getByRole('button');
         fireEvent.click(boton);
 
-        await waitFor(() => {
-            expect(navigate).toHaveBeenCalledTimes(1);
-        });
+        expect(navigate).toHaveBeenCalledTimes(1);
 
     });
 });
