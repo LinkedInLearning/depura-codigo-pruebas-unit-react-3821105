@@ -47,7 +47,7 @@ Este repositorio tiene dos ramas (branches). La rama `desafio` contiene la versi
 Echa un vistazo a mis otros cursos en [LinkedIn Learning](https://www.linkedin.com/learning/instructors/natalia-corea).
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
-[lil-course-url]: https://www.linkedin.com
-[lil-thumbnail-url]: https:
+[lil-course-url]: [https://www.linkedin.com](https://www.linkedin.com/learning/depura-el-codigo-pruebas-unitarias-en-react/)
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D4E0DAQGgT8hHfZH3pg/learning-public-crop_675_1200/0/1722262185981?e=2147483647&v=beta&t=C4xMtgnmR7cWIM6hlQzKCcZg0GmSy3A6pkqMtaoBcEw
 
 [1]: # (End of ES-Instruction ###############################################################################################)
